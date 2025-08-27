@@ -2,6 +2,7 @@
 
 
 function getVowel(string){
+    ///\d/ literally means: "look for any number in the string."
     if(typeof string === "number" || /\d/.test(string))
         return "Invalid input: Kindly input a string"
    /* We are going to use a string object called .match() for example string.match() which helps us to
