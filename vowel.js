@@ -2,7 +2,8 @@
 
 
 function getVowel(string){
-    
+    if(typeof string === "number" || /\d/.test(string))
+        return "Invalid input: Kindly input a string"
    /* We are going to use a string object called .match() for example string.match() which helps us to
  searches a string for matches against a regular expression and returns the results. 
 */
@@ -17,7 +18,7 @@ let  vowel = string.match(/[aeiou]/gi);
 return vowel? vowel.join(""): "there is no string";
 
 }
-console.log(getVowel("my"));
+console.log(getVowel("5"));
 
 
 
